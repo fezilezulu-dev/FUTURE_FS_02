@@ -173,7 +173,8 @@ return (
 
     {/* TABLE */}
     <div style={styles.tableBox}>
-      <table style={styles.table}>
+   <div style={{ overflowX: "auto" }}>
+    <table style={styles.table}>
         <thead>
           <tr>
             <th>Name</th>
@@ -220,6 +221,7 @@ return (
           ))}
         </tbody>
       </table>
+    </div>
     </div>
 
     {/* ADD MODAL */}
@@ -326,12 +328,14 @@ return (
 }
 const styles = {
   page: {
-    minHeight: "100vh",
-    background: "#fff",
-    padding: 40,
-    fontFamily: "Arial",
-    color: "#1a1a1a",
-  },
+  minHeight: "100vh",
+  background: "#fff",
+  padding: "20px",
+  fontFamily: "Arial",
+
+  maxWidth: "1200px",
+  margin: "0 auto",
+},
 
   header: {
     display: "flex",
@@ -372,16 +376,17 @@ const styles = {
   },
 
   analytics: {
-    display: "flex",
-    gap: 20,
-    marginBottom: 20,
-  },
+  display: "flex",
+  gap: 20,
+  flexWrap: "wrap",
+},
 
   stats: {
-    display: "flex",
-    gap: 10,
-    flex: 1,
-  },
+  display: "flex",
+  gap: 10,
+  flex: 1,
+  flexWrap: "wrap",
+},
 
   card: {
     flex: 1,
