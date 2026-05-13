@@ -7,7 +7,7 @@ import {
 } from "chart.js";
 
 import { useEffect, useState } from "react";
-import { getLeads, createLead, updateLead } from "../api/leadApi";
+import { getLeads, createLead, updateLead } from "../api/LeadApi";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
