@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL + "/api/leads";
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api/leads`;
 
 const getToken = () => localStorage.getItem("token");
 
@@ -8,7 +8,10 @@ export const getLeads = async () => {
       Authorization: `Bearer ${getToken()}`,
     },
   });
-  return res.json();
+
+  const data = await res.json();
+
+  return Array.isArray(data) ? data : [];
 };
 
 export const createLead = async (lead) => {
