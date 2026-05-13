@@ -327,14 +327,12 @@ return (
 );/* ================= STYLES ================= */
 }
 const styles = {
-  page: {
+ page: {
   minHeight: "100vh",
-  background: "#fff",
-  padding: "20px",
+  background: "#f4f6f8",
+  padding: 20,
   fontFamily: "Arial",
-
-  maxWidth: "1200px",
-  margin: "0 auto",
+  color: "#1a1a1a",
 },
 
   header: {
