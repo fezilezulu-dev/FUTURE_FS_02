@@ -21,7 +21,7 @@ Password: 123456
 
 ---
 
-## 📌 Features
+##  Features
 
 - Admin login authentication (JWT)
 - Add, edit, and delete leads
@@ -32,7 +32,7 @@ Password: 123456
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React (Vite)
 - Node.js + Express
