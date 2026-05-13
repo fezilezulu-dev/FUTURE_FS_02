@@ -73,26 +73,29 @@ export default function Dashboard({ logout }) {
   };
 
   const deleteLead = async (id) => {
-    try {
-      const token = localStorage.getItem("token");
+  try {
+    const token = localStorage.getItem("token");
 
-      const res = await fetch(`http://localhost:5000/api/leads/${id}`, {
+    const res = await fetch(
+      `${import.meta.env.VITE_API_URL}/api/leads/${id}`,
+      {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      });
-
-      if (!res.ok) {
-        console.log("Delete failed");
-        return;
       }
+    );
 
-      loadLeads();
-    } catch (err) {
-      console.log(err);
+    if (!res.ok) {
+      console.log("Delete failed");
+      return;
     }
-  };
+
+    loadLeads();
+  } catch (err) {
+    console.log(err);
+  }
+};
 
   const filteredLeads = (leads || []).filter((l) => {
     const s = search.toLowerCase();
