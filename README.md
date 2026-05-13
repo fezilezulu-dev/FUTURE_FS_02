@@ -41,3 +41,13 @@ Password: 123456
 - Chart.js
 
 ---
+### Login Page
+
+<img width="1920" height="965" alt="Login" src="https://github.com/user-attachments/assets/7397929f-d367-4213-9910-2820444114ad" />
+
+### Dashboard
+
+<img width="1920" height="971" alt="Screenshot 2026-05-13 213457" src="https://github.com/user-attachments/assets/a2c16edb-c357-4ec2-bfff-0f940982cbb5" />
+
+
+
