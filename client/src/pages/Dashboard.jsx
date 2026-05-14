@@ -101,8 +101,8 @@ export default function Dashboard({ logout }) {
     const s = search.toLowerCase();
     return (
       l?.name?.toLowerCase().includes(s) ||
-      l?.email?.toLowerCase().includes(s) ||
-      l?.status?.toLowerCase().includes(s)
+      l?.status?.toLowerCase().includes(s) ||
+      l?.source?.toLowerCase().includes(s)
     );
   });
 
@@ -155,7 +155,7 @@ return (
 
     {/* SEARCH */}
     <input
-      placeholder="Search by name, email or status..."
+      placeholder="Filter by name, status or source..."
       value={search}
       onChange={(e) => setSearch(e.target.value)}
       style={styles.search}
