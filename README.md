@@ -3,6 +3,13 @@
 A simple full-stack CRM application built using the MERN stack (MongoDB, Express, React, Node.js).  
 It allows an admin to manage client leads, track their status, and view basic analytics.
 
+### Login Page
+
+<img width="1920" height="965" alt="Login" src="https://github.com/user-attachments/assets/7397929f-d367-4213-9910-2820444114ad" />
+
+### Dashboard
+
+<img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/0e3f0232-7f62-4e50-a570-343a4566fd54" />
 ---
 
 ## 🌐 Live Links
@@ -41,13 +48,7 @@ Password: 123456
 - Chart.js
 
 ---
-### Login Page
 
-<img width="1920" height="965" alt="Login" src="https://github.com/user-attachments/assets/7397929f-d367-4213-9910-2820444114ad" />
-
-### Dashboard
-
-<img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/0e3f0232-7f62-4e50-a570-343a4566fd54" />
 
 
 
